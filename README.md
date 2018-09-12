@@ -6,6 +6,8 @@ Unfortunately the layer only works on the Tensorflow backend since it depends on
 
 You can find the original paper on ELMo embeddings here: https://arxiv.org/abs/1802.05365.
 
+I've written a blog post with a high-level overview here: https://jordanhart.co.uk/2018/09/09/elmo-embeddings-layer-in-keras/.
+
 ## Requirements
 
 * Keras 2.2.0
