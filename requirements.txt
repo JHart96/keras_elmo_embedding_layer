@@ -1,0 +1,4 @@
+Keras==2.2.0
+numpy==1.13.3
+tensorflow==1.7.0
+tensorflow_hub==0.1.1
