@@ -30,7 +30,7 @@ class ELMoEmbedding(Layer):
     def call(self, x):
         x = tf.cast(x, dtype=tf.int64)
         sequence_lengths = tf.cast(tf.count_nonzero(x, axis=1), dtype=tf.int32)
-        strings = tf.squeeze(self.lookup_table.lookup(x))
+        strings = self.lookup_table.lookup(x)
         inputs = {
             "tokens": strings,
             "sequence_len": sequence_lengths
