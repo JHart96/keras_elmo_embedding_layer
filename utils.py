@@ -8,8 +8,8 @@ def load_data(max_sequence_length):
     print(len(x_test), 'test sequences')
 
     print('Pad sequences (samples x time)')
-    x_train = sequence.pad_sequences(x_train, maxlen=max_sequence_length)
-    x_test = sequence.pad_sequences(x_test, maxlen=max_sequence_length)
+    x_train = sequence.pad_sequences(x_train, maxlen=max_sequence_length, padding='post', truncating='post')
+    x_test = sequence.pad_sequences(x_test, maxlen=max_sequence_length, padding='post', truncating='post')
     print('x_train shape:', x_train.shape)
     print('x_test shape:', x_test.shape)
     return (x_train, y_train), (x_test, y_test)
